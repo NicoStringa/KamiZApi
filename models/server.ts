@@ -32,7 +32,7 @@ export class Server {
   }
 
   middlewares(): void {
-    this.app.use(cors(options));
+    this.app.use(cors());
     this.app.use(express.json());
   }
 
@@ -48,9 +48,3 @@ export class Server {
     });
   }
 }
-
-const allowedOrigins = ['http://localhost:5173'];
-
-const options: cors.CorsOptions = {
-  origin: allowedOrigins,
-};
