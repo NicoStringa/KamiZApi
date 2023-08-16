@@ -32,7 +32,7 @@ const UserSchema = new Schema<IUser>({
   },
   verified: {
     type: Boolean,
-    default: true,
+    default: false,
     // change default to true for testing, reset to false when finished
   },
 });
